@@ -1,9 +1,10 @@
 /* fonts imported */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* common styles or utilities  start here*/
 *{
     box-sizing: border-box;
 }
-/* common styles or utilities  start here*/
 body{
     margin: 0;
     padding: 0;
@@ -128,6 +129,62 @@ iframe{
 }
 /* video section styles end here  */
 
+/* features section styles start here  */
+.big-container{
+    width: 90%;
+    margin: 70px 5%;
+}
+.features{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+.feature{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.feature-thumb img{
+    width: 100%;
+    height: 500px;
+    opacity: 0.9;
+}
+.feature-info{
+    width: 90%;
+    margin-left: 5%;
+    position: absolute;
+    top:350px;
+    background: rgba(0, 0, 0, 0.247);
+}
+.feature-info .yellow-text{
+    color: yellow;
+}
+.feature-info h2{
+    margin-bottom: 0;
+}
+.feature-info .hide{
+    display: none;
+}
+.category-upload-date{
+    display: flex;
+    justify-content: space-between;
+}
+.category-upload-date .date{
+    color: #fff;
+    margin-bottom: 0;
+}
+.feature:hover img{
+    transform: scale(1.2);
+    transition: transform 0.5s linear 0.1s;
+}
+.feature:hover .hide{
+    display: block;
+    color: #fff;
+}
+.feature:hover .feature-info{
+    top: 280px;
+}
+/* feature section styles end here  */
 
 /* footer section styles start here  */
 footer{
@@ -202,7 +259,6 @@ footer{
     }
     
     /* player section styles  */
-
     .container{
         width: 100%;
     }
@@ -212,6 +268,9 @@ footer{
     }
 
     /* video section styles  */
+    .border{
+        box-shadow: none;
+    }
     .video{
         display: flex;
         flex-direction: column;
@@ -226,6 +285,16 @@ footer{
     .video-info{
         width: 340px;
         margin: auto;
+    }
+
+    /* features section styles  */
+    .big-container{
+        width: 100%;
+    }
+    .features{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 25px;
     }
 
     /* footer styles  */
@@ -283,5 +352,12 @@ footer{
         width: 90%;
         margin: auto;
     }
+
+    /* feature section styles  */
+    .features{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
 }
-/* Media queries styles end here  */
+/*------------------------------- Media queries styles end here  ----------------------------------*/
