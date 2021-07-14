@@ -159,9 +159,9 @@ iframe{
 .feature-info .yellow-text{
     color: yellow;
 }
-.feature-info h2{
+.feature-info h3{
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 23px;
 }
 .feature-info .hide{
     display: none;
