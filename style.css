@@ -290,6 +290,7 @@ footer{
     /* features section styles  */
     .big-container{
         width: 100%;
+        margin: 0;
     }
     .features{
         display: grid;
